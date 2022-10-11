@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CRUD || system</title>
+</head>
+<body>
+
+    <nav>
+        <div class="container-fluid">
+            <div class="user">
+                <h2>Youssif Elhelaly</h2>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="home">
+        <div class="row m-2">
+            <div class="col-lg-3">
+                <div class="sidebar">
+                    <div class="logo">
+                        <h1> <span>CRUD</span>  System</h1>
+                    </div>
+                    <ul>
+                        <a href="#">Products</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                
+                <div class="crud">
+
+                
+                    <div class="form">
+                        <form>
+                            <label for="">Product Name</label>
+                            <input type="text" class="text form-control" id="productName" placeholder="Product Name" required>
+                            <label for="">Product Category</label>
+                            <input type="text" class="text form-control" id="productCategory" placeholder="Product Category"  required>
+                            <label for="">Product Price</label>
+                            <input type="number" class="text form-control" id="productPrice" placeholder="Product Price" required>
+                            <label for="">Product Description</label>
+                            <input type="text" class="text form-control" id="productDescription" placeholder="Product Description" required>
+                            <label for="">Product Count</label>
+                            <input type="number" class="text form-control" id="productCount" placeholder="Product Count" required>
+                            <button type="submit" class="btn btn-primary mt-5" onclick="addProduct()" id="submit">Add Product</button>
+                        </form>
+                        <div class="search">
+                            <input type="search" class="form-control" oninput="search()" id="search" placeholder="search...">
+                        </div>
+                    </div>
+                    
+                    
+
+                    <table class="table mt-5 border ">
+                        <thead>
+                            <th>Product ID</th>
+                            <th>Product Name</th>
+                            <th>Product Category</th>
+                            <th>Product Price</th>
+                            <th>Product Description</th>
+                            <th>Product Count</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </thead>
+                        <tbody id="t_body">
+                            <!-- <tr>
+                                <td data-label="Product ID">3</td>
+                                <td data-label="Product Name">vb</td>
+                                <td data-label="Product Category">bv</td>
+                                <td data-label="Product Price">3</td>
+                                <td data-label="Product Description">bv</td>
+                                <td data-label="Product Count"><div class="count d-flex align-items-center">
+                                    <p>1</p>
+                                    <button><i class="fa-solid fa-plus"></i></button>
+                                    <button><i class="fa-solid fa-minus"></i></button>
+                                </div>
+                            </td>
+                            
+                                <td data-label="Edit"> <button class="btn btn-warning">Edit</button></td>
+                                <td data-label="Delete"><button class="btn btn-danger" onclick="deleteRow(2)">Delete</button> </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="./js/jquery.slim.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

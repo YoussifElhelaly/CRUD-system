@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,22 +13,23 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>CRUD || system</title>
 </head>
+
 <body>
 
     <nav>
         <div class="container-fluid">
             <div class="user">
-                <h2>Youssif Elhelaly</h2>
+                <h2>Youssif</h2>
             </div>
         </div>
     </nav>
-    
+
     <div class="home">
         <div class="row m-2">
             <div class="col-lg-3">
                 <div class="sidebar">
                     <div class="logo">
-                        <h1> <span>CRUD</span>  System</h1>
+                        <h1> <span>CRUD</span> System</h1>
                     </div>
                     <ul>
                         <a href="#">Products</a>
@@ -35,30 +37,37 @@
                 </div>
             </div>
             <div class="col-lg-9">
-                
+
                 <div class="crud">
 
-                
+
                     <div class="form">
                         <form>
                             <label for="">Product Name</label>
-                            <input type="text" class="text form-control" id="productName" placeholder="Product Name" required>
+                            <input type="text" class="text form-control" id="productName" placeholder="Product Name"
+                                required>
                             <label for="">Product Category</label>
-                            <input type="text" class="text form-control" id="productCategory" placeholder="Product Category"  required>
+                            <input type="text" class="text form-control" id="productCategory"
+                                placeholder="Product Category" required>
                             <label for="">Product Price</label>
-                            <input type="number" class="text form-control" id="productPrice" placeholder="Product Price" required>
+                            <input type="number" class="text form-control" id="productPrice" placeholder="Product Price"
+                                required>
                             <label for="">Product Description</label>
-                            <input type="text" class="text form-control" id="productDescription" placeholder="Product Description" required>
+                            <input type="text" class="text form-control" id="productDescription"
+                                placeholder="Product Description" required>
                             <label for="">Product Count</label>
-                            <input type="number" class="text form-control" id="productCount" placeholder="Product Count" required>
-                            <button type="submit" class="btn btn-primary mt-5" onclick="addProduct()" id="submit">Add Product</button>
+                            <input type="number" class="text form-control" id="productCount" placeholder="Product Count"
+                                required>
+                            <button type="submit" class="btn btn-primary mt-5" onclick="addProduct()" id="submit">Add
+                                Product</button>
                         </form>
                         <div class="search">
-                            <input type="search" class="form-control" oninput="search()" id="search" placeholder="search...">
+                            <input type="search" class="form-control" oninput="search()" id="search"
+                                placeholder="search...">
                         </div>
                     </div>
-                    
-                    
+
+
 
                     <table class="table mt-5 border ">
                         <thead>
@@ -90,14 +99,14 @@
                             </tr> -->
                         </tbody>
                     </table>
-                
+
                 </div>
-                    
+
             </div>
         </div>
     </div>
 
-    
+
 
     <script src="./js/jquery.slim.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
@@ -105,4 +114,5 @@
     <script src="./js/wow.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
+
 </html>
